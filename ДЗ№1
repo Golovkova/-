@@ -1,0 +1,57 @@
+# пункт 1 д/з
+value = 3 - 1
+print(value)
+value = "sun"
+print(value)
+
+   # пункт 2 д/з
+def conversion(sec):
+    sec = sec % (24 * 3600)
+    hour_value = sec // 3600
+    minute = sec // 60
+    sec %= 60
+    print("seconds value in hours:", hours_value)
+    print("seconds value in minutes:", minute)
+    return "%02d:%02d:%02d" % (hour_value, minute, sec)
+    а = 18000
+    print("time in preferred_format:-", conversion(a))
+
+    # пункт 3 д/з
+    def solve(a):
+        a1 = n
+        a2 = int(str(n) * 2)
+        a3 = int(str(n) * 3)
+        print(a1 + a2 + a3)
+
+    solve(5)
+
+    # пункт 4 д/з
+    X = int(input("х="))
+    mx = 0
+    while x > 0:
+        c = x % 10
+        if c >= mx:
+            mx = c
+        x //= 10
+    print(mx)
+
+    # пункт 5 д/з
+    profit = int(input('Введите значение прибыли: '))
+    losses = int(input('Введите значение издержек: '))
+    people = int(input('Ввдите количество работников: '))
+    if profit > losses: print('Выручка больше издержек')
+    clear_profit = profit - losses
+    rent = clear_profit / profit
+    print('Рентабельность {} выручки {}: {:.2f}'.format('нашей', 'составила', rent))
+    clear_for_person = float(clear_profit / people)
+    print('Прибыль фирмы в расчете на одного сотрудника: %s' % clear_for_person)
+    if losses > profit: print('Фирма работает в убыток')
+
+    # пункт 6 д/з, Например: a = 2, b = 3.
+    x = 2
+    y = 3
+    day = 1
+    while y - x >= 0:
+        x = x + (x * 0.1)
+    day += 1
+    print(day)
